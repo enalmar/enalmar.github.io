@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Random Accumulating Word Animation
+// Random Accumulating Word Animation - MUCH FASTER SPEED
 document.addEventListener('DOMContentLoaded', function() {
     const words = Array.from(document.querySelectorAll('.word'));
     const visibleWords = [];
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            setTimeout(showNextWord, 1200);
+            setTimeout(showNextWord, 650);
         } else {
             setTimeout(() => {
                 words.forEach(word => {
@@ -146,31 +146,19 @@ document.querySelectorAll('.research-area').forEach(item => {
     observer.observe(item);
 });
 
-// Contact form handling
-document.querySelector('.contact-form form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-    
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-        alert('Please fill in all fields.');
-        return;
-    }
-    
-    // Here you would typically send the data to a server
-    // For now, we'll just show a success message
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
-});
-
 // Add hover effects to buttons
 document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+    });
+    
+    btn.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
+
+// LinkedIn button hover effect
+document.querySelectorAll('.linkedin-btn').forEach(btn => {
     btn.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-2px)';
     });
