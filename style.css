@@ -14,16 +14,16 @@ body {
     line-height: 1.7;
     color: #2c2c2c;
     background-color: #fafafa;
-    margin: 0 20px; /* Global side margins */
+    margin: 0 20px;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 40px; /* Additional container padding */
+    padding: 0 40px;
 }
 
-/* Hero Section - Enhanced Spacing */
+/* Hero Section - Maximum Spacing to Prevent Overlap */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -43,20 +43,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 80vh; /* Ensure proper vertical distribution */
+    min-height: 85vh; /* Increased for better distribution */
 }
 
-/* Full-Width Animated Words - Increased Spacing */
+/* Massively Expanded Animated Words - Prevent All Overlap */
 .animated-words {
-    height: 280px; /* Increased from 240px */
+    height: 400px; /* Significantly increased from 350px */
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 3rem; /* Increased from 2rem */
+    margin-bottom: 8rem; /* Massive gap - increased from 6rem */
     position: relative;
     overflow: hidden;
-    padding: 30px 0; /* Increased from 20px 0 */
+    padding: 50px 0; /* Increased padding */
     gap: 2px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -112,10 +112,10 @@ body {
     opacity: 0.25;
 }
 
-/* Enhanced spacing for subtitle */
+/* Hero subtitle with maximum gap */
 .hero-subtitle {
     font-size: 1.3rem;
-    margin-bottom: 4rem; /* Increased from 3rem */
+    margin-bottom: 5rem; /* Increased from 4rem */
     font-weight: 400;
     color: #4a4a4a;
     line-height: 1.6;
@@ -125,66 +125,19 @@ body {
     margin-right: auto;
 }
 
-/* Enhanced spacing for metrics */
+/* Remove hero metrics completely */
 .hero-metrics {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin-bottom: 5rem; /* Increased from 4rem */
-    padding: 0 20px;
-}
-
-/* Enhanced Metrics Styling - No Icons, Equal Sizes */
-.metric.enhanced {
-    text-align: center;
-    position: relative;
-    padding: 2.5rem 1.5rem; /* Increased top/bottom padding */
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    min-width: 220px; /* Ensure consistent width */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.metric.enhanced:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.15);
-}
-
-/* Remove icon styles */
-.metric-icon {
     display: none;
 }
 
-.metric.enhanced .metric-number {
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: #1a1a1a;
-    display: block;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-}
-
-.metric.enhanced .metric-label {
-    font-size: 0.9rem;
-    color: #333333;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    line-height: 1.3;
-    margin-top: 0;
+.metric.enhanced {
+    display: none;
 }
 
 /* Sophisticated Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 50px; /* Increased from 40px */
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -274,7 +227,7 @@ body {
     background-color: #ffffff;
     color: #2c2c2c;
     text-align: center;
-    margin: 0 -20px; /* Compensate for body margin */
+    margin: 0 -20px;
 }
 
 .section-title {
@@ -306,13 +259,13 @@ body {
     line-height: 1.7;
 }
 
-/* About Section - Updated for 4 boxes */
+/* About Section - 4 boxes */
 .expertise-areas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
-    max-width: 800px; /* Slightly wider to accommodate 4 boxes */
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -324,7 +277,7 @@ body {
     background: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    margin: 0 10px; /* Add margins to prevent edge contact */
+    margin: 0 10px;
 }
 
 .expertise-item:hover {
@@ -357,7 +310,7 @@ body {
     padding: 5rem 0 4rem 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     color: #2c2c2c;
-    margin: 0 -20px; /* Compensate for body margin */
+    margin: 0 -20px;
 }
 
 .timeline {
@@ -399,7 +352,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    margin-right: 20px; /* Prevent edge contact */
+    margin-right: 20px;
 }
 
 .timeline-content:hover {
@@ -451,13 +404,13 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* Research Section - Boxes in Same Line */
+/* Research Section */
 .research {
     padding: 5rem 0 4rem 0;
     background-color: #ffffff;
     color: #2c2c2c;
     text-align: center;
-    margin: 0 -20px; /* Compensate for body margin */
+    margin: 0 -20px;
 }
 
 .research-overview h3 {
@@ -481,19 +434,19 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: nowrap; /* Force boxes to stay in one line */
+    flex-wrap: nowrap;
 }
 
 .research-area {
     flex: 1 1 280px;
-    min-width: 250px; /* Ensure minimum width for readability */
+    min-width: 250px;
     padding: 2rem 1.5rem;
     border-radius: 8px;
     text-align: left;
     background: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    margin: 0 10px; /* Add margins to prevent edge contact */
+    margin: 0 10px;
 }
 
 .research-area:hover {
@@ -576,75 +529,133 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Contact Section */
+/* LinkedIn Contact Section - Replace Contact Form Styles */
 .contact {
     padding: 5rem 0 4rem 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     color: #2c2c2c;
     text-align: center;
-    margin: 0 -20px; /* Compensate for body margin */
+    margin: 0 -20px;
 }
 
-.contact-content {
+.linkedin-contact {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-form {
-    padding: 2.5rem;
+.linkedin-content {
+    padding: 3rem 2rem;
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-    margin: 0 20px; /* Add margins to prevent edge contact */
+    margin: 0 20px;
+    text-align: center;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+.linkedin-icon {
+    margin-bottom: 2rem;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid #d1d5db;
-    border-radius: 4px;
-    font-size: 0.95rem;
-    font-weight: 400;
-    color: #2c2c2c;
-    background: #ffffff;
-    transition: all 0.3s ease;
+.linkedin-icon i {
+    font-size: 4rem;
+    color: #0077b5;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #666666;
-    box-shadow: 0 0 0 3px rgba(102, 102, 102, 0.1);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 14px 0;
+.linkedin-content h3 {
+    font-family: 'Crimson Text', serif;
     font-weight: 600;
-    font-size: 1rem;
-    border: 1px solid #666666;
-    background: #333333;
-    color: #ffffff;
-    cursor: pointer;
-    letter-spacing: 0.02em;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
 }
 
-button[type="submit"]:hover {
-    background-color: #1a1a1a;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-1px);
+.linkedin-content p {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 16px 32px;
+    background-color: #0077b5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 119, 181, 0.3);
+}
+
+.linkedin-btn:hover {
+    background-color: #005885;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+}
+
+.linkedin-btn i {
+    font-size: 1.3rem;
+}
+
+/* Remove old contact form styles */
+.contact-content,
+.contact-form,
+.form-group,
+button[type="submit"] {
+    display: none;
+}
+
+/* Responsive Design for LinkedIn Section */
+@media (max-width: 768px) {
+    .linkedin-content {
+        padding: 2.5rem 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .linkedin-icon i {
+        font-size: 3rem;
+    }
+    
+    .linkedin-content h3 {
+        font-size: 1.7rem;
+    }
+    
+    .linkedin-content p {
+        font-size: 1rem;
+    }
+    
+    .linkedin-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .linkedin-content {
+        padding: 2rem 1rem;
+        margin: 0 5px;
+    }
+    
+    .linkedin-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .linkedin-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .linkedin-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
 }
 
 /* Footer */
@@ -653,13 +664,13 @@ button[type="submit"]:hover {
     color: #e9ecef;
     padding: 2.5rem 0;
     text-align: center;
-    margin: 0 -20px; /* Compensate for body margin */
+    margin: 0 -20px;
 }
 
 .footer-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 40px; /* Add padding to footer content */
+    padding: 0 40px;
 }
 
 .footer-content p {
@@ -680,7 +691,7 @@ button[type="submit"]:hover {
     color: #ffffff;
 }
 
-/* Enhanced Mobile Spacing - Fix Overlap Issues */
+/* EXTREME Mobile Spacing - Prevent All Overlap */
 @media (max-width: 768px) {
     body {
         margin: 0 15px;
@@ -695,14 +706,14 @@ button[type="submit"]:hover {
     }
     
     .hero-container {
-        min-height: 90vh; /* Increased for more space */
+        min-height: 95vh; /* Increased for maximum space */
     }
     
     .animated-words {
-        height: 260px; /* Increased height */
+        height: 350px; /* Increased from 300px */
         gap: 1px;
-        padding: 25px 10px;
-        margin-bottom: 4rem; /* Significantly increased spacing */
+        padding: 40px 10px; /* Increased padding */
+        margin-bottom: 7rem; /* Massive gap - increased from 5rem */
     }
     
     .word {
@@ -713,22 +724,7 @@ button[type="submit"]:hover {
     .hero-subtitle {
         font-size: 1.15rem;
         padding: 0 10px;
-        margin-bottom: 3.5rem; /* Increased spacing */
-    }
-    
-    .hero-metrics {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 0 10px;
-        margin-bottom: 4rem;
-    }
-    
-    .metric.enhanced {
-        min-width: auto;
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-        padding: 2rem 1.5rem;
+        margin-bottom: 5rem; /* Increased from 4rem */
     }
     
     .scroll-indicator {
@@ -785,14 +781,14 @@ button[type="submit"]:hover {
     }
     
     .hero-container {
-        min-height: 95vh; /* Even more space on small screens */
+        min-height: 100vh; /* Maximum space on small screens */
     }
     
     .animated-words {
-        height: 220px; /* Adjusted for small screens */
+        height: 320px; /* Increased from 260px */
         gap: 1px;
-        padding: 20px 5px;
-        margin-bottom: 3.5rem; /* Increased spacing */
+        padding: 35px 5px; /* Increased padding */
+        margin-bottom: 6rem; /* Massive gap - increased from 4rem */
     }
     
     .word {
@@ -801,26 +797,7 @@ button[type="submit"]:hover {
     }
     
     .hero-subtitle {
-        margin-bottom: 3rem; /* Increased spacing */
-    }
-    
-    .hero-metrics {
-        gap: 1.5rem;
-        margin-bottom: 3rem;
-    }
-    
-    .metric.enhanced {
-        margin: 0 auto;
-        padding: 2rem 1rem;
-        max-width: 260px;
-    }
-    
-    .metric.enhanced .metric-number {
-        font-size: 1.4rem;
-    }
-    
-    .metric.enhanced .metric-label {
-        font-size: 0.85rem;
+        margin-bottom: 4.5rem; /* Increased from 3.5rem */
     }
     
     .scroll-indicator {
@@ -846,16 +823,15 @@ button[type="submit"]:hover {
     }
 }
 
-/* Additional spacing for very small windows */
 @media (max-width: 380px) {
     .hero-container {
-        min-height: 100vh; /* Maximum space for very small screens */
+        min-height: 105vh; /* Even more space for very small screens */
     }
     
     .animated-words {
-        height: 200px;
-        padding: 15px 5px;
-        margin-bottom: 3rem; /* Increased spacing */
+        height: 300px; /* Increased from 240px */
+        padding: 30px 5px; /* Increased padding */
+        margin-bottom: 5.5rem; /* Massive gap - increased from 3.5rem */
     }
     
     .word {
@@ -864,14 +840,28 @@ button[type="submit"]:hover {
     
     .hero-subtitle {
         font-size: 1.1rem;
-        margin-bottom: 2.5rem; /* Increased spacing */
+        margin-bottom: 4rem; /* Increased from 3rem */
+    }
+}
+
+/* Extra small screens - maximum spacing */
+@media (max-width: 320px) {
+    .hero-container {
+        min-height: 110vh;
     }
     
-    .hero-metrics {
-        margin-bottom: 2.5rem;
+    .animated-words {
+        height: 280px;
+        padding: 25px 3px;
+        margin-bottom: 5rem;
     }
     
-    .metric.enhanced {
-        padding: 1.8rem 1rem;
+    .word {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 3.5rem;
     }
 }
