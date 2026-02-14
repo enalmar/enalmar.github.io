@@ -616,6 +616,10 @@ section:not(.hero) {
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 1.125rem;
+    }
+
     .container,
     .container-narrow {
         padding: 0 var(--space-md);
@@ -629,8 +633,56 @@ section:not(.hero) {
         margin-bottom: var(--space-md);
     }
 
+    .statement-subtitle {
+        font-size: clamp(1.4rem, 4vw, 2.5rem);
+    }
+
     .scroll-indicator {
         margin-top: var(--space-xl);
+    }
+
+    .scroll-text {
+        font-size: 0.75rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.9rem, 5.5vw, 2.5rem);
+        margin-bottom: var(--space-lg);
+    }
+
+    .about-lead {
+        font-size: clamp(1.3rem, 3.2vw, 1.65rem);
+        margin-bottom: var(--space-md);
+    }
+
+    .about-body {
+        font-size: 1.125rem;
+        margin-bottom: var(--space-lg);
+    }
+
+    .expertise-item {
+        padding: var(--space-md) var(--space-sm);
+    }
+
+    .expertise-label {
+        font-size: 0.8rem;
+    }
+
+    .expertise-item p {
+        font-size: 1.05rem;
+    }
+
+    .research-intro {
+        font-size: 1.125rem;
+        margin-bottom: var(--space-lg);
+    }
+
+    .research-area h4 {
+        font-size: 1.1rem;
+    }
+
+    .research-area li {
+        font-size: 1rem;
     }
 
     .timeline {
@@ -651,8 +703,24 @@ section:not(.hero) {
         left: -100px;
         width: 80px;
         padding-right: var(--space-xs);
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         font-weight: 700;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .timeline-company {
+        font-size: 1.05rem;
+    }
+
+    .timeline-content p:not(.timeline-company) {
+        font-size: 1.05rem;
+    }
+
+    .achievement {
+        font-size: 0.8rem;
     }
 
     .timeline-marker {
@@ -673,5 +741,27 @@ section:not(.hero) {
         50% {
             box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 8px rgba(0, 0, 0, 0.3);
         }
+    }
+
+    .contact-text {
+        font-size: 1.15rem;
+    }
+
+    .linkedin-btn {
+        font-size: 1.1rem;
+        padding: 1.1rem 2.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.85rem 1.75rem;
+    }
+
+    .contact-card {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
     }
 }
