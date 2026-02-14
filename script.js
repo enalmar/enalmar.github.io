@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         draw() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
             ctx.fill();
@@ -150,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const distance = Math.sqrt(dx * dx + dy * dy);
                 
                 if (distance < maxDistance) {
-                    const opacity = (1 - distance / maxDistance) * 0.25;
-                    ctx.strokeStyle = `rgba(0, 0, 0, ${opacity})`;
-                    ctx.lineWidth = 0.8;
+                    const opacity = (1 - distance / maxDistance) * 0.35;
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
+                    ctx.lineWidth = 1;
                     ctx.beginPath();
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
